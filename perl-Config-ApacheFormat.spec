@@ -15,7 +15,6 @@ BuildRequires: perl-devel
 BuildRequires: perl(Class::MethodMaker)
 # This one is not found automatically
 Requires:      perl(Class::MethodMaker) 
-BuildRoot: 	%{_tmppath}/%{name}-buildroot/
 BuildArch: noarch
 
 %description
