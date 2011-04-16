@@ -1,7 +1,7 @@
 %define module Config-ApacheFormat
 %define name perl-%{module}
 %define version 1.2
-%define release %mkrel 7
+%define release %mkrel 8
 
 Summary: 	Use Apache format config files 
 Name: 		%{name}
