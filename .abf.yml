@@ -1,2 +1,4 @@
+removed_sources:
+  Config-ApacheFormat-1.2.tar.bz2: 058cbb0b2297b3a3fb66e5c09eceefe4d6e1f8b6
 sources:
-  "Config-ApacheFormat-1.2.tar.bz2": 058cbb0b2297b3a3fb66e5c09eceefe4d6e1f8b6
+  Config-ApacheFormat-1.2.tar.gz: 0397c5ff19d8f4f12219a7e6ff1b51cf26ceed2f

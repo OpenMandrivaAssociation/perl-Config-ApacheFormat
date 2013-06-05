@@ -5,11 +5,11 @@
 
 Summary: 	Use Apache format config files 
 Name: 		%{name}
-Version: 	%{version}
-Release: 	%{release}
+Version: 	%perl_convert_version 1.2
+Release: 	1
 License: 	GPL or Artistic
 Group: 		Development/Perl
-Source: 	http://search.cpan.org/CPAN/authors/id/S/SA/SAMTREGAR/%{module}-%{version}.tar.bz2
+Source: 	http://search.cpan.org/CPAN/authors/id/S/SA/SAMTREGAR/Config-ApacheFormat-1.2.tar.gz
 Url: 		http://search.cpan.org/dist/%{module}
 BuildRequires: perl-devel
 BuildRequires: perl(Class::MethodMaker)
@@ -80,4 +80,5 @@ rm -rf $RPM_BUILD_ROOT
 
 * Sat Jul 23 2005 Olivier Thauvin <nanardon@mandriva.org> 1.2-1mdk
 - first mdk release
+
 
