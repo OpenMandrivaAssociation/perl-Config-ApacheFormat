@@ -7,7 +7,7 @@ Version: 	%perl_convert_version %{upstream_version}
 Release: 	9
 License: 	GPL or Artistic
 Group: 		Development/Perl
-Source: 	http://search.cpan.org/CPAN/authors/id/S/SA/SAMTREGAR/%{module}-%{version}.tar.bz2
+Source: 	http://search.cpan.org/CPAN/authors/id/S/SA/SAMTREGAR/%{module}-%{upstream_version}.tar.bz2
 Url: 		http://search.cpan.org/dist/%{module}
 BuildRequires: perl-devel
 BuildRequires: perl(Class::MethodMaker)
