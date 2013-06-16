@@ -1,12 +1,10 @@
 %define module Config-ApacheFormat
-%define name perl-%{module}
-%define version 1.2
-%define release %mkrel 8
+%define upstream_version 1.2
 
 Summary: 	Use Apache format config files 
-Name: 		%{name}
-Version: 	%{version}
-Release: 	%{release}
+Name: 		perl-%{module}
+Version: 	%perl_convert_version %{upstream_version}
+Release: 	9
 License: 	GPL or Artistic
 Group: 		Development/Perl
 Source: 	http://search.cpan.org/CPAN/authors/id/S/SA/SAMTREGAR/%{module}-%{version}.tar.bz2
@@ -14,8 +12,7 @@ Url: 		http://search.cpan.org/dist/%{module}
 BuildRequires: perl-devel
 BuildRequires: perl(Class::MethodMaker)
 # This one is not found automatically
-Requires:      perl(Class::MethodMaker) 
-BuildRoot: 	%{_tmppath}/%{name}-buildroot/
+Requires:      perl(Class::MethodMaker)
 BuildArch: noarch
 
 %description
@@ -27,7 +24,7 @@ nested blocks with built-in parameter inheritance. This can greatly reduce the
 amount or repeated information in your configuration files.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{module}-%{upstream_version}
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
@@ -37,14 +34,9 @@ amount or repeated information in your configuration files.
 make test
 
 %install
-rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
 
-%clean 
-rm -rf $RPM_BUILD_ROOT
-
 %files
-%defattr(-,root,root)
 %{_mandir}/*/*
 %{perl_vendorlib}/*
 
