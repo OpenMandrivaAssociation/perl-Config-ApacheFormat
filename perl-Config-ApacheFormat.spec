@@ -4,7 +4,7 @@
 Summary: 	Use Apache format config files 
 Name: 		perl-%{module}
 Version: 	%perl_convert_version %{upstream_version}
-Release: 	10
+Release: 	11
 License: 	GPL or Artistic
 Group: 		Development/Perl
 Source: 	http://search.cpan.org/CPAN/authors/id/S/SA/SAMTREGAR/%{module}-%{upstream_version}.tar.bz2
