@@ -8,7 +8,7 @@ Release: 	11
 License: 	GPL or Artistic
 Group: 		Development/Perl
 Source: 	http://search.cpan.org/CPAN/authors/id/S/SA/SAMTREGAR/%{module}-%{upstream_version}.tar.bz2
-Url: 		http://search.cpan.org/dist/%{module}
+Url: 		https://search.cpan.org/dist/%{module}
 BuildRequires: perl-devel
 BuildRequires: perl(Class::MethodMaker)
 # This one is not found automatically
